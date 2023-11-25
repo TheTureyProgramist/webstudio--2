@@ -1,4 +1,3 @@
-/*root-css-selector*/
 :root {
     --info-color: #757575;
     --title-color: #FFF;
@@ -8,8 +7,6 @@
     --firstcolor: #212121;
 }
 
-/*class-style*/
-/*header-class-style*/
 .header {}
 
 .header-list {}
@@ -17,6 +14,14 @@
 .header-item {}
 
 .header-address {}
+
+.container {
+    width: 1170px;
+    height: 98px;
+    top: 774px;
+    left: 215px;
+    background-color: var(--title-color);
+}
 
 .header-s:hover {
     color: var(--onecolor);
@@ -56,10 +61,15 @@
     letter-spacing: 0.28px;
 }
 
-/*main-style*/
-/*hero-style*/
-/*webstudio*/
+
 .hero {}
+
+.hero-container {
+    width: 1600px;
+    height: 600px;
+    top: 80px;
+    background-color: var(--firstcolor);
+}
 
 .hero-title {
     font-weight: 900;
@@ -70,7 +80,6 @@
     letter-spacing: 2.64px;
     text-transform: uppercase;
     width: 696px;
-    background-color: var(--info-color);
 }
 
 .hero-button {
@@ -83,12 +92,18 @@
     letter-spacing: 0.96px;
 }
 
-/*detail-style*/
 .detail {}
 
 .detail-list {}
 
 .detail-item {}
+
+.detail-container {
+    width: 1170px;
+    height: 98px;
+    top: 774px;
+    left: 215px;
+}
 
 .detail-title {
     width: 270px;
@@ -110,12 +125,18 @@
     letter-spacing: 0.42px;
 }
 
-/*progect-style*/
 .progect {}
 
 .progect-list {}
 
 .progect-item {}
+
+.progect-container {
+    width: 1170px;
+    height: 386px;
+    top: 966px;
+    left: 215px;
+}
 
 .progect-title {
     color: var(--text-color);
@@ -128,12 +149,18 @@
 
 .progect-photo {}
 
-/*command-style*/
+
 .command {}
 
 .command-list {}
 
 .command-item {}
+
+.command-container {
+    width: 1600px;
+    height: 648px;
+    top: 1446px;
+}
 
 .command-title {
     color: var(--text-color);
@@ -161,8 +188,11 @@
 
 .command-photo {}
 
-/*portfolio-style*/
-/*cites-buttons-style*/
+.header-container {
+    width: 1600px;
+    height: 80px;
+}
+
 .cites {}
 
 .cites-buttons-list {}
@@ -178,13 +208,19 @@
     letter-spacing: 0.48px;
 }
 
+.cites-container {
+    width: 1170px;
+    height: 1360px;
+    top: 174px;
+    left: 215px;
+}
+
 .cites-button:hover {
     color: var(--title-color);
     background-color: var(--onecolor);
 
 }
 
-/*cites-style*/
 .cites-list {}
 
 .cites-item {}
@@ -209,12 +245,18 @@
 
 .cites-photo {}
 
-/*footer-styles-class*/
 .footer {}
 
 .footer-list {}
 
 .footer-item {}
+
+.footer-container {
+    width: 1600px;
+    height: 252px;
+    top: 2094px;
+    background-color: var(--firstcolor);
+}
 
 .footer-sender {
     color: var(--onecolor);
@@ -223,7 +265,6 @@
     font-weight: 700;
     letter-spacing: 0.78px;
     line-height: 2.15;
-    background-color: var(--firstcolor);
 }
 
 .footer-sends {
@@ -233,13 +274,11 @@
     font-weight: 700;
     letter-spacing: 0.78px;
     line-height: 2.15;
-    background-color: var(--firstcolor);
 }
 
 .footer-address {}
 
 .footer-send {
-    background-color: var(--info-color);
     width: 231px;
     height: 21px;
     flex-shrink: 0;
@@ -251,7 +290,6 @@
 }
 
 .footer-sen {
-    background-color: var(--info-color);
     width: 231px;
     height: 21px;
     flex-shrink: 0;
