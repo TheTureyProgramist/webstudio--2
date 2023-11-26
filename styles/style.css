@@ -66,6 +66,9 @@
     width: 1600px;
     height: 600px;
     background-color: var(--firstcolor);
+    border: red 10px;
+    padding-left: 0 15px;
+    padding-right: 0 15px;
 }
 
 .hero-title {
@@ -98,15 +101,15 @@
 .detail-container {
     width: 1170px;
     height: 98px;
+    border:red 1px;
 }
 
 .detail-title {
-    width: 270px;
+    width: 240 px;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
-    text-transform: uppercase;
 }
 
 .detail-text {
