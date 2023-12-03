@@ -9,75 +9,8 @@
 
 .container {
     width: 1170px;
-    padding: 0 15px;
+    padding: 15px;
     margin: 0px auto;
-    height: 90px;
-}
-
-.container-2 {
-    width: 1170px;
-    height: 600px;
-    padding: 0 15px;
-    margin: 0px auto;
-    background-color: #212121;
-}
-
-.container-3 {
-    width: 1170px;
-    padding: 0 15px;
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    margin-bottom: 0px auto;
-    margin-top: 94px;
-}
-
-.container-4 {
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    margin-bottom: 0px auto;
-    padding: 0 15px;
-    width: 1170px;
-    margin-top: 118px;
-}
-
-.container-5 {
-    margin-top: 188px;
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    margin-bottom: 0px auto;
-    padding: 0 15px;
-    width: 1170px;
-}
-
-.container-6 {
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    margin-bottom: 0px auto;
-    padding: 0 15px;
-    width: 1170px;
-    margin-top: 94px;
-}
-
-.container-7 {
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    margin-bottom: 0px auto;
-    padding: 0 15px;
-    width: 1170px;
-    background-color: #212121;
-    margin-top: 94px;
-    height: 252px;
-}
-
-.container-8 {
-    margin-left: 0px auto;
-    margin-right: 0px auto;
-    margin-bottom: 0px auto;
-    padding: 0 15px;
-    width: 1170px;
-    background-color: #212121;
-    margin-top: 96px;
-    height: 252px;
 }
 
 .header {}
@@ -127,7 +60,9 @@
 }
 
 
-.hero {}
+.hero {
+    background-color: #212121;
+}
 
 .hero-title {
     font-weight: 900;
@@ -270,7 +205,9 @@
 
 .cites-photo {}
 
-.footer {}
+.footer {
+    background-color: #212121;
+}
 
 .footer-list {}
 
