@@ -15,7 +15,11 @@
 
 .header {}
 
-.header-list {}
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .header-item {}
 
@@ -59,6 +63,13 @@
     letter-spacing: 0.28px;
 }
 
+.hero-item {}
+
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .hero {
     background-color: #212121;
@@ -87,7 +98,11 @@
 
 .detail {}
 
-.detail-list {}
+.detail-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .detail-item {}
 
@@ -112,7 +127,17 @@
 
 .progect {}
 
-.progect-list {}
+.progect-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.progect-backet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .progect-item {}
 
@@ -130,7 +155,17 @@
 
 .command {}
 
-.command-list {}
+.command-l {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.command-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .command-item {}
 
@@ -162,7 +197,11 @@
 
 .cites {}
 
-.cites-buttons-list {}
+.cites-buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .cites-buttons-item {}
 
@@ -181,7 +220,11 @@
 
 }
 
-.cites-list {}
+.cites-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .cites-item {}
 
