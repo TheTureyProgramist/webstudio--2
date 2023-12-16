@@ -9,8 +9,9 @@
 
 .container {
     width: 1170px;
-    padding: 15px;
+    padding: 0 15px;
     margin: 0px auto;
+    border: 2px solid red;
 }
 
 .header {}
@@ -73,6 +74,7 @@
 
 .hero {
     background-color: #212121;
+    height: 600px;
 }
 
 .hero-title {
@@ -250,6 +252,7 @@
 
 .footer {
     background-color: #212121;
+    height: 252px;
 }
 
 .footer-list {}
