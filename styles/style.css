@@ -85,14 +85,14 @@
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    width: 696px;
+    padding: 200px;
 }
 
 .hero-button {
     background-color: var(--onecolor);
     color: var(--title-color);
-    text-align: center;
     font-size: 16px;
+    text-align: center;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.96px;
