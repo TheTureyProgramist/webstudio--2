@@ -5,26 +5,41 @@
     --extra-color: rgba(255, 255, 255, 0.60);
     --onecolor: #2196F3;
     --firstcolor: #212121;
+    --codecolor: #F5F4FA; 
+    --firecolor: red;
 }
 
 .container {
     width: 1170px;
     padding: 0 15px;
     margin: 0px auto;
-    border: 2px solid red;
+    border: 2px solid var(--firecolor);
 }
 
-.header {}
+.header {
+    border: 1px solid var(--hd-border);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.weblink {
+    color: var(--text-color);
+    margin-right: 93px;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.weblink2{
+    color: var(--onecolor);
+}
 
 .header-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.header-item {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    align-items: center;
 }
 
 .header-address {}
@@ -40,25 +55,6 @@
     color: var(--info-color);
 }
 
-.header-sender {
-    color: var(--onecolor);
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-    padding-bottom: 32px;
-}
-
-.header-sends {
-    color: var(--text-color);
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-}
-
-.head-link {}
-
 .header-send:hover {
     color: var(--onecolor);
 }
@@ -68,20 +64,10 @@
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    padding-bottom: 32px;
-    padding-top: 32px;
-}
-
-.hero-item {}
-
-.hero-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .hero {
-    background-color: #212121;
+    background-color: var(--firstcolor);
     padding-top: 200px;
     padding-bottom: 280px;
 }
@@ -94,6 +80,10 @@
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .hero-button {
@@ -104,11 +94,12 @@
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.96px;
+    margin-top: 45px;
 }
 
 .detail {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .detail-list {
@@ -129,46 +120,42 @@
 
 .detail-text {
     width: 270px;
-    height: 72px;
-    flex-shrink: 0;
     color: var(--info-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    margin-top: 10px;
+    display: block;
 }
 
-.progect {}
-
-.progect-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.progect {
+    padding-bottom: 94px;
 }
 
 .progect-backet {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 30px;
 }
 
 .progect-item {}
 
 .progect-title {
-    color: var(--text-color);
     text-align: center;
+    margin-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    line-height: 1.33;
-    margin-bottom: 59px;
+    color: #000;
 }
 
 .progect-photo {}
 
 
 .command {
-    margin-top: 94px;
+    background-color: var(--codecolor);
+    padding-top: 94px;
+    margin-bottom: 94px;
 }
 
 .command-l {
@@ -183,7 +170,9 @@
     justify-content: space-around;
 }
 
-.command-item {}
+.command-item {
+    background-color: var(--title-color);
+}
 
 .command-title {
     color: var(--text-color);
@@ -200,6 +189,8 @@
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .command-text {
@@ -208,20 +199,21 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
-    padding-bottom: 128px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .command-photo {}
 
 .cites {
-    margin-bottom: 94px;
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .cites-buttons-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 8px;
 }
 
 .cites-buttons-item {}
@@ -234,6 +226,7 @@
     line-height: 1.63;
     letter-spacing: 0.48px;
     margin-bottom: 50px;
+    background-color: ;
 }
 
 .cites-button:hover {
@@ -244,8 +237,9 @@
 
 .cites-list {
     display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .cites-item {}
@@ -271,16 +265,16 @@
 .cites-photo {}
 
 .footer {
-    background-color: #212121;
+    background-color: var(--firstcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-list {}
 
 .footer-item {}
 
-.footer-step {
-    padding-top: 60px;
-}
+.footer-step {}
 
 .footer-sender {
     color: var(--onecolor);
@@ -311,6 +305,7 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
     color: var(--extra-color);
+    margin-bottom: 9px;
 }
 
 .footer-sendd {
@@ -322,7 +317,6 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
     color: var(--extra-color);
-    padding-bottom: 60px;
 }
 
 .footer-sen {
@@ -334,4 +328,5 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    margin-bottom: 9px;
 }
