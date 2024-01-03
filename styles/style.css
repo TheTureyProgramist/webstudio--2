@@ -5,12 +5,12 @@
     --extra-color: rgba(255, 255, 255, 0.60);
     --onecolor: #2196F3;
     --firstcolor: #212121;
-    --codecolor: #F5F4FA; 
+    --codecolor: #F5F4FA;
     --firecolor: red;
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0px auto;
     border: 2px solid var(--firecolor);
@@ -23,22 +23,22 @@
 }
 
 .weblink {
-    color: var(--text-color);
-    margin-right: 93px;
+    color: var(--onecolor);
     font-size: 26px;
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 0.78px;
+    padding-left: 15px;
 }
 
-.weblink2{
-    color: var(--onecolor);
+.weblink2 {
+    color: var(--text-color);
+    margin-right: 93px;
 }
 
 .header-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -49,6 +49,14 @@
 }
 
 .header-s {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    color: var(--info-color);
+    margin-right: 50px;
+}
+
+.header-sl {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -64,12 +72,21 @@
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+    padding-right: 50px;
+}
+
+.header-sendz {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    padding-right: 344px;
 }
 
 .hero {
     background-color: var(--firstcolor);
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -95,6 +112,10 @@
     line-height: 1.88;
     letter-spacing: 0.96px;
     margin-top: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .detail {
@@ -226,13 +247,16 @@
     line-height: 1.63;
     letter-spacing: 0.48px;
     margin-bottom: 50px;
-    background-color: ;
+    background-color: #F5F4FA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
 }
 
 .cites-button:hover {
     color: var(--title-color);
     background-color: var(--onecolor);
-
 }
 
 .cites-list {
@@ -242,7 +266,10 @@
     flex-wrap: wrap;
 }
 
-.cites-item {}
+.cites-item {
+    border: 1px solid #EEE;
+    width: 370px;
+}
 
 .cites-title {
     width: 322px;
@@ -251,6 +278,10 @@
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .cites-text {
@@ -260,13 +291,16 @@
     font-weight: 400;
     line-height: 1.88;
     letter-spacing: 0.48px;
+    margin-left: 24px;
+    margin-bottom: 20px;
+    margin-right: 24px;
 }
 
 .cites-photo {}
 
 .footer {
     background-color: var(--firstcolor);
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 60px;
 }
 
