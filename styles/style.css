@@ -10,11 +10,34 @@
 }
 
 .container {
-    width: 1200px;
     padding: 0 15px;
+    width: 1200px;
     margin: 0px auto;
     border: 2px solid var(--firecolor);
+    /*flex-grow: 1;*/
+    /*width: calc((100%-30px*2)/3);*/
 }
+
+.bg-box-2 {}
+
+.bg-box-1 {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-image: url(./an.webp);
+    background-color: 
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+    background-position: 0px 580px, 0px 0px, 0px, 1400px, 250px;
+    background-size: 400px, 50px, 100px, 100px, 950px;
+}
+
+.bg-box-1::before {
+    content: 'file: ///C:/Users/Admin/Desktop/photo_2024-01-21_19-21-55.webp';
+}
+
+.bg-box-3 {}
+
+.bg-box-4 {}
 
 .header {
     border: 1px solid var(--hd-border);
@@ -40,6 +63,19 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 50px;
+    margin-right: 344px;
+}
+
+.adres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-container {
+    display: flex;
 }
 
 .header-address {}
@@ -53,7 +89,6 @@
     font-weight: 500;
     letter-spacing: 0.28px;
     color: var(--info-color);
-    margin-right: 50px;
 }
 
 .header-sl {
@@ -69,18 +104,11 @@
 
 .header-send {
     color: var(--text-color);
+    display: flex;
+    gap: 50px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    padding-right: 50px;
-}
-
-.header-sendz {
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    padding-right: 344px;
 }
 
 .hero {
@@ -189,9 +217,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .command-item {
+    box-shadow: 1px 1px 1px grey;
+    border-end-end-radius: 13px;
+    border-end-start-radius: 13px;
     background-color: var(--title-color);
 }
 
@@ -221,10 +253,12 @@
     font-weight: 400;
     letter-spacing: 0.48px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-.command-photo {}
+.command-photo {
+
+}
 
 .cites {
     padding-top: 94px;
@@ -235,9 +269,13 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 50px;
 }
 
-.cites-buttons-item {}
+.cites-buttons-item {
+    
+    width: calc((100%-30px*2)/3);
+}
 
 .cites-button {
     color: var(--text-color);
@@ -246,7 +284,6 @@
     font-weight: 500;
     line-height: 1.63;
     letter-spacing: 0.48px;
-    margin-bottom: 50px;
     background-color: #F5F4FA;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -264,11 +301,14 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .cites-item {
     border: 1px solid #EEE;
-    width: 370px;
+    width: calc((100%-30px*2)/3);
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px grey;
 }
 
 .cites-title {
@@ -300,7 +340,7 @@
 
 .footer {
     background-color: var(--firstcolor);
-    margin-top: 60px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
