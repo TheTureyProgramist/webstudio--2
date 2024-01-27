@@ -18,26 +18,42 @@
     /*width: calc((100%-30px*2)/3);*/
 }
 
-.bg-box-2 {}
-
-.bg-box-1 {
+.bg-box-2::before {
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-image: url(./an.webp);
-    background-color: 
-    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
-    background-position: 0px 580px, 0px 0px, 0px, 1400px, 250px;
-    background-size: 400px, 50px, 100px, 100px, 950px;
+    display: block;
+    content: url(../time.webp);
+    background-repeat: no-repeat;
 }
 
 .bg-box-1::before {
-    content: 'file: ///C:/Users/Admin/Desktop/photo_2024-01-21_19-21-55.webp';
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    content: url(../antena-2.webp);
+    background-repeat: no-repeat;
 }
 
-.bg-box-3 {}
 
-.bg-box-4 {}
+.bg-box-3::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    content: url(../notebook.webp);
+    background-repeat: no-repeat;
+}
+
+.bg-box-4::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    content: url(../astronaut.webp);
+    background-repeat: no-repeat;
+}
 
 .header {
     border: 1px solid var(--hd-border);
@@ -256,9 +272,7 @@
     padding-bottom: 30px;
 }
 
-.command-photo {
-
-}
+.command-photo {}
 
 .cites {
     padding-top: 94px;
@@ -273,7 +287,7 @@
 }
 
 .cites-buttons-item {
-    
+
     width: calc((100%-30px*2)/3);
 }
 
