@@ -51,7 +51,7 @@
     height: 120px;
     border-radius: 4px;
     display: block;
-    content: url(../astronaut.webp);
+    content: url(../astro.webp);
     background-repeat: no-repeat;
 }
 
@@ -128,9 +128,10 @@
 }
 
 .hero {
-    background-color: var(--firstcolor);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../overla.png);
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -237,10 +238,9 @@
 }
 
 .command-item {
-    box-shadow: 1px 1px 1px grey;
-    border-end-end-radius: 13px;
-    border-end-start-radius: 13px;
-    background-color: var(--title-color);
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .command-title {
@@ -287,7 +287,6 @@
 }
 
 .cites-buttons-item {
-
     width: calc((100%-30px*2)/3);
 }
 
@@ -318,11 +317,17 @@
     flex-grow: 1;
 }
 
+.cites-item:hover {
+    border: 1px solid #EEE;
+    width: calc((100%-30px*2)/3);
+    box-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .cites-item {
     border: 1px solid #EEE;
     width: calc((100%-30px*2)/3);
-    border-radius: 12px;
-    box-shadow: 1px 1px 1px grey;
+    background: #FFF;
 }
 
 .cites-title {
