@@ -25,7 +25,9 @@
     display: block;
     content: url(../time.webp);
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
+
 
 .bg-box-1::before {
     width: 270px;
@@ -34,6 +36,7 @@
     display: block;
     content: url(../antena-2.webp);
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 
@@ -44,6 +47,7 @@
     display: block;
     content: url(../notebook.webp);
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .bg-box-4::before {
@@ -53,6 +57,7 @@
     display: block;
     content: url(../astro.webp);
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .header {
