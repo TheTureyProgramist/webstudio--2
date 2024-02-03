@@ -13,9 +13,6 @@
     padding: 0 15px;
     width: 1200px;
     margin: 0px auto;
-    border: 2px solid var(--firecolor);
-    /*flex-grow: 1;*/
-    /*width: calc((100%-30px*2)/3);*/
 }
 
 .bg-box-2::before {
@@ -23,29 +20,27 @@
     height: 120px;
     border-radius: 4px;
     display: block;
-    content: url(../time.webp);
+    content: url(../fones/time.webp);
     background-repeat: no-repeat;
     margin-bottom: 30px;
 }
-
 
 .bg-box-1::before {
     width: 270px;
     height: 120px;
     border-radius: 4px;
     display: block;
-    content: url(../antena-2.webp);
+    content: url(../fones/antena-2.webp);
     background-repeat: no-repeat;
     margin-bottom: 30px;
 }
-
 
 .bg-box-3::before {
     width: 270px;
     height: 120px;
     border-radius: 4px;
     display: block;
-    content: url(../notebook.webp);
+    content: url(../fones/notebook.webp);
     background-repeat: no-repeat;
     margin-bottom: 30px;
 }
@@ -55,7 +50,7 @@
     height: 120px;
     border-radius: 4px;
     display: block;
-    content: url(../astro.webp);
+    content: url(../fones/astro.webp);
     background-repeat: no-repeat;
     margin-bottom: 30px;
 }
@@ -131,12 +126,15 @@
     font-weight: 500;
     letter-spacing: 0.28px;
 }
-
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../overla.png);
+    background-image: 
+    url(../fones/overla.png);
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
 }
 
 .hero-title {
