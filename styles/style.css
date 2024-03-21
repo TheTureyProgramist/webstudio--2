@@ -130,6 +130,9 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: 
+    linear-gradient(to right,
+   rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
     url(../fones/overla.png);
     background-repeat: no-repeat;
     display: flex;
@@ -224,7 +227,7 @@
 .command {
     background-color: var(--codecolor);
     padding-top: 94px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .command-l {
@@ -310,6 +313,8 @@
 .cites-button:hover {
     color: var(--title-color);
     background-color: var(--onecolor);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .cites-list {
@@ -361,7 +366,7 @@
 .cites-photo {}
 
 .footer {
-    background-color: var(--firstcolor);
+    background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
