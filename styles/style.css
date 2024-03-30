@@ -6,13 +6,32 @@
     --onecolor: #2196F3;
     --firstcolor: #212121;
     --codecolor: #F5F4FA;
-    --firecolor: red;
 }
 
 .container {
     padding: 0 15px;
     width: 1200px;
     margin: 0px auto;
+}
+
+.mail {
+    width: 16px;
+    height: 12px;
+    fill: var(--info-color);
+}
+
+.mail:hover {
+    fill: var(--onecolor);
+}
+
+.telephone {
+    width: 10px;
+    height: 16px;
+    fill: var(--info-color);
+}
+
+.telephone:hover {
+    fill: var(--onecolor);
 }
 
 .bg-box-2::before {
@@ -80,7 +99,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 50px;
-    margin-right: 344px;
+    margin-right: 318px;
 }
 
 .adres {
@@ -126,14 +145,15 @@
     font-weight: 500;
     letter-spacing: 0.28px;
 }
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: 
-    linear-gradient(to right,
-   rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../fones/overla.png);
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../fones/overla.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -278,7 +298,105 @@
     padding-bottom: 30px;
 }
 
-.command-photo {}
+.icon {
+    display: flex;
+    gap: 10px;
+}
+
+.instagram:hover {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: var(--title-color);
+    border-radius: 20px;
+    background-color: #2196F3;
+}
+
+.twitter:hover {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    margin-right: 10px;
+    fill: var(--title-color);
+    border-radius: 20px;
+    background-color: #2196F3;
+}
+
+.linkedin:hover {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: var(--title-color);
+    border-radius: 20px;
+    background-color: #2196F3;
+}
+
+.facebook:hover {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    margin-right: 10px;
+    fill: var(--title-color);
+    border-radius: 20px;
+    background-color: #2196F3;
+}
+
+.instagram {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    margin-right: 10px;
+    fill: var(--title-color);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.twitter {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    fill: var(--title-color);
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.facebook {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    fill: var(--title-color);
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.fixer {
+    display: flex;
+    flex-direction: row;
+}
+
+.formater {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkedin {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    fill: var(--title-color);
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+}
+
+.icon-ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-top: 3px;
+}
 
 .cites {
     padding-top: 94px;
@@ -314,7 +432,7 @@
     color: var(--title-color);
     background-color: var(--onecolor);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+        0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .cites-list {
@@ -369,6 +487,8 @@
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-list {}
@@ -430,4 +550,200 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
     margin-bottom: 9px;
+}
+
+.usually-clients {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.clients {
+    padding-top: 94px;
+    margin-bottom: 97px;
+}
+
+.footer-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-listen {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.client-1 {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+}
+
+.client-2 {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+
+}
+
+.client-3 {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+}
+
+.client-4 {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+}
+
+.client-5 {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+}
+
+.client-6 {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+}
+
+.client-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.client-1:hover {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+
+.client-2:hover {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+
+.client-3:hover {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+
+.client-4:hover {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+
+.client-5:hover {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+
+.client-6:hover {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    fill: #2196F3;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
 }
