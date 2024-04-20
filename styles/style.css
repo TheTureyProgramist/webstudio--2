@@ -8,6 +8,27 @@
     --codecolor: #F5F4FA;
 }
 
+.color {
+    color: #000;
+}
+
+.header-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    width: 48px;
+    height: 4px;
+    opacity: 0;
+    margin-top: 28px;
+    justify-content: center;
+    background-color: var(--wathbtbg);
+}
+
+.header-item:hover>.header-link::after {
+    opacity: 1;
+}
+
 .container {
     padding: 0 15px;
     width: 1200px;
@@ -79,6 +100,10 @@
     border: 1px solid var(--hd-border);
     padding-top: 24px;
     padding-bottom: 25px;
+}
+
+.header-item:first-child: {
+    
 }
 
 .weblink {
@@ -995,4 +1020,9 @@ img {
     margin-right: 32px;
     display: flex;
     gap: 10px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
 }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/positions.css">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./scss/_main.scss">
+  <link rel="stylesheet" href="./styles/modal.css">
 </head>
 <body>
   <header class="header">
@@ -20,13 +20,13 @@
       <a class="weblink" href="./index.html">Web<span class="weblink2">Studio</span></a>
       <ul class="header-list">
         <li class="header-item">
-          <a class="header-send" href="./index.html">Студія</a>
+          <a class="header-send" href="./index.html"><b class="color">Студія</b></a>
         </li>
         <li class="header-item">
-          <a class="header-send" href="./portfolio.html">Портфоліо</a>
+          <a class="header-send" href="./portfolio.html"><b class="color">Портфоліо</b></a>
         </li>
         <li class="header-item">
-          <a class="header-send" href="./index.html">Контакти</a>
+          <a class="header-send" href="./index.html"><b class="color">Контакти</b></a>
         </li>
       </ul>
       <ul class="adres">
@@ -57,7 +57,7 @@
         <div class="overla">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <li class="hero-title">
-            <button class="hero-button">Замовити послугу</button>
+            <button class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </div>
     </section>
@@ -342,5 +342,54 @@
         </ul>
       </div>
   </footer>
+<div class="backdrop is-hidden">
+  <div class="modal" data-modal>
+   <svg class="cross">
+    <use href="./fones/symbol-defs-3.svg#icon-cross" data-modal-close></use>
+   </svg>
+   <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+  <p class="modal-text">
+    Ім'я
+  </p>
+  <form action="Name" class="modal-input">
+    <input type="text" id="" name="Name" class="modal-pole">
+  </form>
+  <p class="modal-text">
+    Телефон
+  </p>
+<form action="Telephone" class="modal-input">
+  <input type="text" id="" name="Telephone" class="modal-pole">
+   <label for="" class="modal-label-2">
+      <svg class="telephone">
+        <use href="./fones/symbol-defs-3.svg#icon-Vector-2"></use>
+      </svg>
+    </label>
+</form>
+  <p class="modal-text">
+    Пошта
+  </p>
+  <form action="E-mail" class="modal-input">
+    <label for="" class="modal-label-2">
+      <svg class="e-mail">
+        <use href="./fones/symbol-defs-3.svg#icon-black-mail"></use>
+      </svg>
+    </label>
+    <input type="text" id="" name="E-mail" class="modal-pole">
+  </form>
+  <p class="modal-text">
+    Коментар
+  </p>
+  <form action="Comment" class="modal-input-2">
+    <label class="modal-label" for="Введіть текст">Введіть текст</label>
+    <input type="text" id="" name="Comment" class="modal-pole-2">
+  </form>
+  <div class="flex-modal">
+    <button class="modal-button" type="button" data-modal-close>
+    Відправити
+  </button>
+  </div>
+  </div>
+</div>
+<script type="module" src="./index/main.js"></script>
 </body>
 </html>
