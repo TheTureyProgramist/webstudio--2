@@ -1,181 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфоліо</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="grid">
-        <div class="container header-container">
-          <a class="weblink" href="./portfolio.html"
-            >Web<span class="weblink2">Studio</span></a
-          >
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-send" href="./index.html">Студія</a>
-            </li>
-            <li class="header-item">
-              <a class="header-send" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="header-item">
-              <a class="header-send" href="./portfolio.html">Контакти</a>
-            </li>
-          </ul>
-          <ul class="adres">
-            <li class="header-item">
-              <address class="header-address">
-                <svg class="mail">
-                  <use href="./fones/symbol-defs-3.svg#icon-mail"></use>
-                </svg>
-                <a class="header-s" href="./portfolio.html"
-                  >info@devstudio.com</a
-                >
-              </address>
-            </li>
-            <li class="header-item">
-              <address class="header-address">
-                <svg class="telephone">
-                  <use href="./fones/symbol-defs-3.svg#icon-telephone"></use>
-                </svg>
-                <a class="header-sl" href="./portfolio.html"
-                  >+38 096 111 11 11</a
-                >
-              </address>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфоліо</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/animations-and-overlay.css">
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="grid">
+      <div class="container header-container">
+        <a class="weblink" href="./portfolio.html">Web<span class="weblink2">Studio</span></a>
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-send" href="./index.html"> <b class="color">
+                <p class="header-text">Студія</p>
+              </b></a>
+            <div class="header-link"></div>
+          </li>
+          <li class="header-item">
+            <a class="header-send" href="./portfolio.html"><b class="color">
+                <p class="header-text">Портфоліо</p>
+              </b></a>
+            <div class="header-link"></div>
+          </li>
+          <li class="header-item">
+            <a class="header-send" href="./index.html"><b class="color">
+                <p class="header-text">Контакти</p>
+              </b></a>
+            <div class="header-link"></div>
+          </li>
+        </ul>
+        <ul class="adres">
+          <li class="header-item">
+            <address class="header-address">
+              <svg class="mail">
+                <use href="./fones/symbol-defs-3.svg#icon-mail"></use>
+              </svg>
+              <a class="header-s" href="./portfolio.html">info@devstudio.com</a>
+            </address>
+          </li>
+          <li class="header-item">
+            <address class="header-address">
+              <svg class="telephone">
+                <use href="./fones/symbol-defs-3.svg#icon-telephone"></use>
+              </svg>
+              <a class="header-sl" href="./portfolio.html">+38 096 111 11 11</a>
+            </address>
+          </li>
+        </ul>
       </div>
-    </header>
-    <hr />
-    <main>
-      <section class="cites">
-        <div class="grid">
-          <div class="container">
-            <ul class="cites-buttons-list">
-              <li class="cites-buttons-item">
-                <button class="cites-button" type="button">Усі</button>
-              </li>
-              <li class="cites-buttons-item">
-                <button class="cites-button" type="button">Веб-сайти</button>
-              </li>
-              <li class="cites-buttons-item">
-                <button class="cites-button" type="button">Додатки</button>
-              </li>
-              <li class="cites-buttons-item">
-                <button class="cites-button" type="button">Дизайн</button>
-              </li>
-              <li class="cites-buttons-item">
-                <button class="cites-button" type="button">Маркетинг</button>
-              </li>
-            </ul>
-            <ul class="cites-list">
-              <li class="cites-item">
-                <img
-                  src="./optimize/technokrak.png"
-                  width="370"
-                  height="294"
-                  alt="Веб-сайт - технокряк"
-                />
-                <h3 class="cites-title">Технокряк</h3>
-                <p class="cites-text">Веб-сайти</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/poster.jpg"
-                  alt="Постер New Orlean vs Golden Star - Дизайн"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Постер New Orlean vs Golden Star</h3>
-                <p class="cites-text">Дизайн</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/restoran.jpg"
-                  alt="Додаток - Ресторан Seafood"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Ресторан Seafood</h3>
-                <p class="cites-text">Додаток</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/prime.jpg"
-                  alt="Проєкт Prime - Маркетинг"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Проєкт Prime</h3>
-                <p class="cites-text">Маркетинг</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/boxes.jpg"
-                  alt="Проєкт Boxes - Додаток"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Проєкт Boxes</h3>
-                <p class="cites-text">Додаток</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/inspiration.jpg"
-                  alt="Веб-сайт Inspiration has no Borders"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Inspiration has no Borders</h3>
-                <p class="cites-text">Веб-сайт</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/limited.jpg"
-                  alt="Видання Limited Edition Дизайн"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Видання Limited Edition</h3>
-                <p class="cites-text">Дизайн</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/lab.jpg"
-                  alt="Проєкт LAB"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Проєкт LAB</h3>
-                <p class="cites-text">Маркетинг</p>
-              </li>
-              <li class="cites-item">
-                <img
-                  src="./optimize/growing.jpg"
-                  alt="Додаток Growing Business"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="cites-title">Growing Business</h3>
-                <p class="cites-text">Додаток</p>
-              </li>
-            </ul>
+    </div>
+  </header>
+  <hr />
+  <main>
+    <section class="cites">
+      <div class="grid">
+        <div class="container">
+          <ul class="cites-buttons-list">
+            <li class="cites-buttons-item">
+              <button class="cites-button" type="button">Усі</button>
+            </li>
+            <li class="cites-buttons-item">
+              <button class="cites-button" type="button">Веб-сайти</button>
+            </li>
+            <li class="cites-buttons-item">
+              <button class="cites-button" type="button">Додатки</button>
+            </li>
+            <li class="cites-buttons-item">
+              <button class="cites-button" type="button">Дизайн</button>
+            </li>
+            <li class="cites-buttons-item">
+              <button class="cites-button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="cites-list">
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/technokrak.png" width="370" height="294" alt="Веб-сайт - технокряк" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <h3 class="cites-title">Технокряк</h3>
+              <p class="cites-text">Веб-сайти</p>
+            </li>
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/poster.jpg" alt="Постер New Orlean vs Golden Star - Дизайн" width="370"
+                  height="294" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <h3 class="cites-title">Постер New Orlean vs Golden Star</h3>
+              <p class="cites-text">Дизайн</p>
+            </li>
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/restoran.jpg" alt="Додаток - Ресторан Seafood" width="370" height="294"
+                  class="image" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <h3 class="cites-title">Ресторан Seafood</h3>
+              <p class="cites-text">Додаток</p>
+            </li>
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/prime.jpg" alt="Проєкт Prime - Маркетинг" width="370" height="294" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <h3 class="cites-title">Проєкт Prime</h3>
+              <p class="cites-text">Маркетинг</p>
+            </li>
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/boxes.jpg" alt="Проєкт Boxes - Додаток" width="370" height="294" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <h3 class="cites-title">Проєкт Boxes</h3>
+              <p class="cites-text">Додаток</p>
+            </li>
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/inspiration.jpg" alt="Веб-сайт Inspiration has no Borders" width="370"
+                  height="294" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <h3 class="cites-title">Inspiration has no Borders</h3>
+              <p class="cites-text">Веб-сайт</p>
+            </li>
+            <li class="cites-item">
+              <div class="box">
+                <img src="./optimize/limited.jpg" alt="Видання Limited Edition Дизайн" width="370" height="294" />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+        <h3 class="cites-title">Видання Limited Edition</h3>
+        <p class="cites-text">Дизайн</p>
+        </li>
+        <li class="cites-item">
+          <div class="box">
+            <img src="./optimize/lab.jpg" alt="Проєкт LAB" width="370" height="294" />
+            <div class="overlay">
+              <p class="overlay-text">
+                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+              </p>
+            </div>
+          </div>
+      <h3 class="cites-title">Проєкт LAB</h3>
+      <p class="cites-text">Маркетинг</p>
+      </li>
+      <li class="cites-item">
+        <div class="box">
+          <img src="./optimize/growing.jpg" alt="Додаток Growing Business" width="370" height="294" />
+          <div class="overlay">
+            <p class="overlay-text">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+              відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-      <footer class="footer">
+        <h3 class="cites-title">Growing Business</h3>
+        <p class="cites-text">Додаток</p>
+      </li>
+      </ul>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
     <div class="container fixer">
       <ul class="footer-list">
         <li class="footer-item">
@@ -200,51 +233,54 @@
       </ul>
       <div class="formater">
         <ul class="footer-listen">
-        <li class="footer-icons">
-          <p class="footer-text">
-            ПРИЄДНУЙТЕСЬ
-          </p>
-        </li>
-      </ul>
-      <ul class="icon-ul">
-        <li class="icon">
-          <svg class="instagram">
-            <use href="./fones/symbol-defs-3.svg#icon-instagram"></use>
-          </svg>
-        </li>
-        <li class="icon">
-          <svg class="twitter">
-            <use href="./fones/symbol-defs-3.svg#icon-twitter"></use>
-          </svg>
-        </li>
-        <li class="icon">
-          <svg class="facebook">
-            <use href="./fones/symbol-defs-3.svg#icon-facebook"></use>
-          </svg>
-        <li class="icon">
-          <svg class="linkedin">
-            <use href="./fones/symbol-defs-3.svg#icon-linkedin"></use>
-          </svg>
-        </li>
-      </ul>
+          <li class="footer-icons">
+            <p class="footer-text">
+              ПРИЄДНУЙТЕСЬ
+            </p>
+          </li>
+        </ul>
+        <ul class="icon-ul">
+          <li class="icon">
+            <svg class="instagram">
+              <use href="./fones/symbol-defs-3.svg#icon-instagram"></use>
+            </svg>
+          </li>
+          <li class="icon">
+            <svg class="twitter">
+              <use href="./fones/symbol-defs-3.svg#icon-twitter"></use>
+            </svg>
+          </li>
+          <li class="icon">
+            <svg class="facebook">
+              <use href="./fones/symbol-defs-3.svg#icon-facebook"></use>
+            </svg>
+          <li class="icon">
+            <svg class="linkedin">
+              <use href="./fones/symbol-defs-3.svg#icon-linkedin"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
-       </ul>
-        <ul class="subscribe">
-          <h2 class="subscribe-title">Підпишіться на розсилку</h2>
-          <div class="fix">
-           <form action="E-mail">
-            <label for="e-mail"><p class="e-mail">E-mail</p></label>
+      </ul>
+      <ul class="subscribe">
+        <h2 class="subscribe-title">Підпишіться на розсилку</h2>
+        <div class="fix">
+          <form action="E-mail">
+            <label for="e-mail">
+              <p class="e-mail">E-mail</p>
+            </label>
             <input type="text" name="e-mail" id="e-mail" class="subscribe-input">
-           </form>
-           <button class="subscribe-button">Підписатися 
+          </form>
+          <button class="subscribe-button">Підписатися
             <svg class="send">
               <use href="./fones/symbol-defs-3.svg#icon-icon-send-1">
               </use>
             </svg>
-           </button>
-          </div>
-        </ul>
+          </button>
+        </div>
+      </ul>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>

@@ -1,158 +1,184 @@
-.backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(0.3px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.modal-box {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-.modal {
-    width: 528px;
-    height: 581px;
-    padding-top: 8px;
-    padding-right: 8px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    flex-shrink: 0;
-    background-color: white;
-}
-
-.cross {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    margin-left: 496px;
-    padding: 6px;
-    border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-}
-
-.cross:hover {
-    fill: #2196F3;
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    margin-left: 496px;
-    padding: 6px;
-    border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-}
-
-.modal-text {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
+.modal-list {}
 
 .modal-title {
-    color: #212121;
+    color: var(--feauturesmain);
     text-align: center;
-    margin-top: 1px;
-    font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
-    padding-bottom: 2px;
+    margin-bottom: 12px;
 }
 
-.modal-button {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
+.modal-window {
     border-radius: 4px;
-    background: #188CE8;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    letter-spacing: 0.96px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 52px;
-    padding-right: 52px;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    width: 528px;
+    height: 581px;
 }
 
-.flex-modal {
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal-close-button {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 }
 
-.modal-pole {
-    border-radius: 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 42px;
+.modal-close-button:hover,
+.modal-close-button:focus {
+    fill: var(--whathbtbg);
+}
+
+.modal-close-icons {}
+
+.modal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-item {}
+
+.modal-name {
+    color: var(--headermail);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.modal-icons:hover {
+    fill: var(--wathbtbg);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-input {
     width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 35px;
+
 }
 
-.modal-pole-2 {
-    padding-bottom: 12px;
-    padding-top: 12px;
-    width: 458px;
+.modal-input:focus {
+    outline: none;
+    
+    border: 1px solid #2196f3;
+}
+
+.modal-comment:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+}
+
+.modal-icons {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+    fill: var(--feauturesmain);
+}
+
+.modal-comment {
+    width: 448px;
     height: 120px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px 16px;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.12px;
+    resize: none;
+}
+
+.modal-coment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
 }
 
 .modal-label {
-    color: rgba(117, 117, 117, 0.50);
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    position: absolute;
-    padding-top: 12px;
-    margin-left: 16px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
-.modal-label:focus {
+.modal-text {
+    color: var(--feauturesmain);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.modal-link {
+    color: #2196f3;
+}
+
+.modal-button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
     border-radius: 4px;
-    outline: none;
-    border: 1px solid #2196F3;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    position: absolute;
-    padding-top: 12px;
-    margin-left: 16px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-}
-
-.e-mail {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    position: absolute;
-    margin-top: -3px;
-}
-
-.telephone {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    position: absolute;
-    fill: black;
-    
-    margin-top: -3px;
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 52px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    border-color: transparent;
 }

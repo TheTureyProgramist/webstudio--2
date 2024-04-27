@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="../css/positions.css">
+  <link rel="stylesheet" href="../css/animations-and-overlay.css">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/modal.css">
@@ -20,13 +20,18 @@
       <a class="weblink" href="./index.html">Web<span class="weblink2">Studio</span></a>
       <ul class="header-list">
         <li class="header-item">
-          <a class="header-send" href="./index.html"><b class="color">Студія</b></a>
+          <a class="header-send" href="./index.html"> <b class="color"><p class="header-text">Студія</p></b></a>
+          <div class="header-link"></div>
         </li>
         <li class="header-item">
-          <a class="header-send" href="./portfolio.html"><b class="color">Портфоліо</b></a>
+          <a class="header-send" href="./portfolio.html"><b class="color"><p class="header-text">Портфоліо</p></b></a>
+        
+          <div class="header-link"></div>
         </li>
         <li class="header-item">
-          <a class="header-send" href="./index.html"><b class="color">Контакти</b></a>
+          <a class="header-send" href="./index.html"><b class="color"><p class="header-text">Контакти</p></b></a>
+        
+          <div class="header-link"></div>
         </li>
       </ul>
       <ul class="adres">
@@ -57,7 +62,7 @@
         <div class="overla">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <li class="hero-title">
-            <button class="hero-button" data-modal-open>Замовити послугу</button>
+            <button class="hero-button" type="submit" data-modal-open>Замовити послугу</button>
         </div>
       </div>
     </section>
@@ -342,54 +347,58 @@
         </ul>
       </div>
   </footer>
-<div class="backdrop is-hidden">
-  <div class="modal" data-modal>
-   <svg class="cross">
-    <use href="./fones/symbol-defs-3.svg#icon-cross" data-modal-close></use>
-   </svg>
-   <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-  <p class="modal-text">
-    Ім'я
-  </p>
-  <form action="Name" class="modal-input">
-    <input type="text" id="" name="Name" class="modal-pole">
-  </form>
-  <p class="modal-text">
-    Телефон
-  </p>
-<form action="Telephone" class="modal-input">
-  <input type="text" id="" name="Telephone" class="modal-pole">
-   <label for="" class="modal-label-2">
-      <svg class="telephone">
-        <use href="./fones/symbol-defs-3.svg#icon-Vector-2"></use>
-      </svg>
-    </label>
-</form>
-  <p class="modal-text">
-    Пошта
-  </p>
-  <form action="E-mail" class="modal-input">
-    <label for="" class="modal-label-2">
-      <svg class="e-mail">
-        <use href="./fones/symbol-defs-3.svg#icon-black-mail"></use>
-      </svg>
-    </label>
-    <input type="text" id="" name="E-mail" class="modal-pole">
-  </form>
-  <p class="modal-text">
-    Коментар
-  </p>
-  <form action="Comment" class="modal-input-2">
-    <label class="modal-label" for="Введіть текст">Введіть текст</label>
-    <input type="text" id="" name="Comment" class="modal-pole-2">
-  </form>
-  <div class="flex-modal">
-    <button class="modal-button" type="button" data-modal-close>
-    Відправити
-  </button>
-  </div>
-  </div>
-</div>
-<script type="module" src="./index/main.js"></script>
+<div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button class="modal-close-button" type="button" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1">
+                    </use>
+                </svg>
+            </button>
+            <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+            </h2>
+            <ul class="modal-list">
+                <li class="modal-item">
+                    <label for="name" class="modal-name">Ім'я
+                        <input id="name" type="text" class="modal-input" />
+                        <svg class="modal-icons" width="18" height="18">
+                            <use href="./image/symbol-defs.svg#icon-Vector-1"></use>
+                        </svg>
+                    </label>
+                </li>
+                <li class="modal-item">
+                    <label for="phone" class="modal-name">Телефон
+                        <input id="phone" type="tel" class="modal-input" />
+                        <svg class="modal-icons" width="18" height="18">
+                            <use href="./image/symbol-defs.svg#icon-Vector"></use>
+                        </svg>
+                    </label>
+                </li>
+                <li class="modal-item">
+                    <label for="email" class="modal-name">Пошта
+                        <input id="email" type="email" class="modal-input" />
+                        <svg class="modal-icons" width="18" height="18">
+                            <use href="./image/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </label>
+                </li>
+                <li class="modal-item">
+                    <label for="comment" class="modal-name">Коментар
+                        <textarea id="comment" cols="30" rows="10" class="modal-comment"
+                            placeholder="Введіть текст"></textarea>
+                    </label>
+                </li>
+            </ul>
+            <label class="modal-label">
+                <input type="checkbox" class="modal-checkbox" />
+                <p class="modal-text">Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="modal-link">Умови договору</a>
+                </p>
+            </label>
+            <button class="modal-button " type="button" data-modal-close>Відправити</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
