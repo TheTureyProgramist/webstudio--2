@@ -32,8 +32,8 @@
         transition-delay: 2s;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
-    width: 528px;
-    height: 581px;
+    width: 488px;
+    height: 541px;
 }
 
 .backdrop {
@@ -52,9 +52,8 @@
     overflow: hidden;
 }
 
-.modal-close-button {
+.modal-close-button:hover {
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     display: block;
     width: 30px;
@@ -64,14 +63,39 @@
     align-items: center;
     position: absolute;
     top: 8px;
-    fill: #000;
+    border: #2196f3;
+    right: 8px;
+}
+
+.modal-close-button {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: block;
+    width: 30px;
+    transition-property: background-color, color, box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
     right: 8px;
 }
 
 .close-icon {
     fill: #000;
-    width: 11px;
-    height: 11px;
+    width: 16px;
+    transition-property: fill, background-color, color, box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    height: 16px;
+}
+
+.close-icon:hover {
+    fill: #188ce8;
 }
 
 .modal-close-button:hover,
@@ -101,10 +125,13 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    transition-property: background-color, color, fill, f box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icons:hover {
-    fill: var(--wathbtbg);
+    fill: #2196f3;
 }
 
 .is-hidden {
@@ -140,9 +167,14 @@
 
 .modal-icons {
     position: absolute;
-    top: 29px;
+    top: 32px;
     left: 12px;
-    fill: var(--feauturesmain);
+    width: 14px;
+    transition-property: background-color, color, fill, f box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    height: 14px;
+    fill: black;
 }
 
 .modal-comment {
