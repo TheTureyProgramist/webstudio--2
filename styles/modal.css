@@ -28,7 +28,8 @@
     top: 50%;
     left: 50%;
      transition-property: transform;
-        transition-duration: 250ms;
+        transition-duration: 3s;
+        transition-delay: 2s;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
     width: 528px;
@@ -113,7 +114,7 @@
 }
 
 .backdrop.is-hidden .modal-window {
-    transform: translate(-500%, -50%);
+    transform: translate(-500%, -500%);
 }
 
 .modal-input {
