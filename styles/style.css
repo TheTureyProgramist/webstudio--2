@@ -18,11 +18,11 @@
 .head-line {
     position: relative;
     transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head-line::after{
+.head-line::after {
     content: '';
     display: block;
     position: absolute;
@@ -259,6 +259,11 @@
     color: var(--title-color);
     font-size: 16px;
     text-align: center;
+        animation-name: bg-box;
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-direction: inherit;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.96px;
@@ -575,6 +580,11 @@
     padding-bottom: 60px;
     display: flex;
     flex-direction: row;
+    animation-name: foot;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-delay: 6s;
+    animation-direction: unset;
 }
 
 .footer-list {}
@@ -787,6 +797,11 @@
     fill: #AFB1B8;
     transition-property: fill, background-color, color, box-shadow, border;
     transition-duration: 250ms;
+            animation-name: box;
+                animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+                animation-duration: 5s;
+                animation-delay: 0s;
+                animation-direction: inherit;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -802,6 +817,11 @@
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 4px;
+            animation-name: bg-box;
+                animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+                animation-duration: 5s;
+                animation-delay: 0s;
+                animation-direction: inherit;
     border: 1px solid #AFB1B8;
     fill: #AFB1B8;
 }
